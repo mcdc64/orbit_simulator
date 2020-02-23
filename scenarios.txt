@@ -4,8 +4,8 @@ body1 = Body("Earth", 6e24,-1e6,0,0,-7,0,list_bodies,size=5)
 body2 = Body("Moon1", 8e22,3e8,-12e8,0,1100,1,list_bodies,size=2)
 body3 = Body("Moon2", 3e22,3.5e8,-12e8,0,1420,2,list_bodies,size=1)
 
-plt.xlim(-5e8,5e8)
-plt.ylim(-5e8,5e8)
+plt.xlim(-10e8,10e8)
+plt.ylim(-10e8,10e8)
 
 list_bodies.append(body1) 
 list_bodies.append(body2)
