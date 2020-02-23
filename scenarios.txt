@@ -1,0 +1,60 @@
+--------
+Binary system separated by close encounter with a big planet:
+body1 = Body("Earth", 6e24,-1e6,0,0,-7,0,list_bodies,size=5)
+body2 = Body("Moon1", 8e22,3e8,-12e8,0,1100,1,list_bodies,size=2)
+body3 = Body("Moon2", 3e22,3.5e8,-12e8,0,1420,2,list_bodies,size=1)
+
+plt.xlim(-5e8,5e8)
+plt.ylim(-5e8,5e8)
+
+list_bodies.append(body1) 
+list_bodies.append(body2)
+list_bodies.append(body3)
+--------
+Attempt to simulate a Lagrange point. Two smaller bodies stay together for about half an orbit (delta_t = 10)
+body1 = Body("Earth", 6e24,0,0,0,0,0,list_bodies,size=10)
+body2 = Body("Moon1", 6e22,4e8,0,0,1000,1,list_bodies,size=3)
+body3 = Body("Moon2", 6e18,3.411485e8,0,0,900,2,list_bodies,size=1)
+
+plt.xlim(-5e8,5e8)
+plt.ylim(-5e8,5e8)
+
+list_bodies.append(body1) 
+list_bodies.append(body2)
+list_bodies.append(body3)
+--------
+Bigger moon causes smaller moon to switch the direction of its orbit
+body1 = Body("Earth", 6e24,0,0,0,0,0,list_bodies,size=10)
+body2 = Body("Moon1", 6e22,4e8,0,0,1000,1,list_bodies,size=3)
+body3 = Body("Moon2", 6e18,3e8,0,0,1400,2,list_bodies,size=1)
+
+plt.xlim(-5e8,5e8)
+plt.ylim(-5e8,5e8)
+
+list_bodies.append(body1) 
+list_bodies.append(body2)
+list_bodies.append(body3)
+--------
+Earth, Sun, Moon
+body1 = Body("Sun", 2e30,-5e7,0,0,0,0,list_bodies,size=10,color="yellow")
+body2 = Body("Earth", 6e24,1.5e11,0,0,30000,1,list_bodies,size=3,color="blue")
+body3 = Body("Moon", 7e22,1.504e11,0,0,31000,2,list_bodies,size=1,color="gray")
+
+plt.xlim(-5e8,5e11)
+plt.ylim(-5e8,5e11)
+
+list_bodies.append(body1) 
+list_bodies.append(body2)
+list_bodies.append(body3)
+--------
+Binary planets with moon that swaps parents every so often
+body1 = Body("Earth", 6e24,-2e8,0,0,-625,0,list_bodies,size=6,color="blue")
+body2 = Body("Planet2", 5e24,2e8,0,0,750,1,list_bodies,size=5,color="green")
+body3 = Body("Moon2", 3e21,0e8,0,-1000,400,2,list_bodies,size=3,color="gray")
+
+plt.xlim(-5e8,5e8)
+plt.ylim(-5e8,5e8)
+
+list_bodies.append(body1) 
+list_bodies.append(body2)
+list_bodies.append(body3)
