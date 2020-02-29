@@ -1,3 +1,5 @@
+# Cian McDonnell 2020
+# Feel free to use or modify this code as you wish, but please credit me as the creator. Thanks.
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg,NavigationToolbar2Tk
 from matplotlib.figure import Figure
@@ -137,10 +139,10 @@ body3 = Body("Moon1", 3e21,0e8,0,-1000,400,2,list_bodies,size=3,color="gray")
 plt.xlim(-5e8,5e8)
 plt.ylim(-5e8,5e8)
 
-list_bodies.append(body1) #add the bodies to the list
+list_bodies.append(body1) 
 list_bodies.append(body2)
 list_bodies.append(body3)
-
+#add the bodies to the list
 
 
 total_mass = sum(body.mass for body in list_bodies)
